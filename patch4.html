@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Patch 14.4</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 60px;
+        }
+        .header {
+            background-color: #000000;
+            padding: 15px;
+            margin: 0;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+        .header img {
+            width: 10%;
+            height: 10%;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 10px;
+            text-align: left;
+            color: #fff;
+        }
+        .white {
+            color: #fff;
+        }
+        .comment {
+            margin-bottom: 10px;
+        }
+        .comment-author {
+            font-weight: bold;
+            color: orangered;
+        }
+        .comment-content {
+            margin-left: 20px;
+        }
+        .comment-date {
+            color: #999;
+            font-size: 0.8em;
+        }
+        .comment-form textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .comment-form input[type="submit"] {
+            background-color: orangered;
+            color: #fff;
+            border: none;
+            padding: 5px 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row header align-items-center">
+        <div class="col-auto">
+            <a href="index.html" class="article-link">
+                <img src="logo-handicap.jpg" alt="Logo">
+            </a>  
+        </div>
+        <div class="col text-end">
+            <a href="login.html" style="color: white">Se connecter</a>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<h2 style="text-align: center;">Mise à jour du 15/02/2024</h2>
+
+<br>
+
+<h3>ANIMATIONS</h3>
+<p>- Correction d'un problème avec l'animation de montée d'échelle.</p>
+<p>- Correction d'un problème lorsque le Zeus était équipé dans le menu principal.</p>
+<p>- Correction d'un problème avec l'animation de prise en main du couteau Kukri pendant la séquence d'introduction de l'équipe.</p>
+
+<h3>MODE SPECTATEUR</h3>
+<p>- Les personnes qui commentent ou observent peuvent désormais utiliser les commandes « spec_lock_to_accountid » et « spec_lock_to_current_player ».</p>
+<p>- Les commandes « spec_player » et « spec_goto » sont maintenant prises en charge par CSTV et les rediffusions.</p>
+<p>- Le paramètre du serveur « tv_secure_bypass » autorise désormais les connexions via HLAE à des serveurs CSTV sécurisés par VAC.</p>
+
+<h3>GAMEPLAY</h3>
+<p>- En mode match à mort, le Zeus peut désormais être acheté au début de chaque manche. Il sera racheté automatiquement à moins que le mode « Armes aléatoires » ne soit activé.</p>
+<p>- En mode match à mort, faire deux victimes au Zeus au cours d'une même vie rapporte maintenant le double de points.</p>
+<p>- Ajout de la commande côté serveur « mp_modify_timeouts » qui permet d'ajouter ou de soustraire une pause tactique à l'équipe AT/T si le fichier de sauvegarde est restauré ou si une équipe a pris par erreur une pause tactique au lieu d'un arrêt technique.</p>
+
+<h3>JOURNALISATION</h3>
+<p>- Le début et la fin de l'échauffement génèrent désormais un message de journal dans le fichier journal du serveur de jeu.</p>
+<p>- Correction du problème suivant : les valeurs des dégâts enregistrées dans le journal du serveur de jeu n'étaient pas arrondies correctement.</p>
+
+<h3>DIVERS</h3>
+<p>- Amélioration de la fluidité des animations en vue subjective lorsque les fréquences d'images du client sont faibles ou instables.</p>
+<p>- Correction de problèmes liés à certaines configurations de touches et à leur code de balayage. Les associations de touches ne dépendent plus de la langue d'entrée.</p>
+<p>- Ajout d'un élément de diagnostic des performances au HUD qui peut être configuré dans la section « Télémétrie » du menu des paramètres.</p>
+<p>- Les variables de console « cq_netgraph » et « cq_netgraph_problem_show_auto » ont été supprimées. Utilisez « cl_hud_telemetry_serverrecvmargin_graph_show » à la place.</p>
+<p>- Correction du problème suivant : la connexion à un serveur d'entraînement local sans connexion Steam était parfois impossible.</p>
+<p>- Correction d'un bug avec l'animation du grade à la fin des matchs compétitifs.</p>
+<p>- Correction d'un problème de performance de la lunette des fusils de précision et ajustement du traitement visuel.</p>
+<p>- Diverses améliorations des performances.</p>
+
+<h3>CARTES</h3>
+<p><strong>Vertigo</strong></p>
+<p>- Correction d'un problème de collision avec les grenades autour du climatiseur du site de bombe B.</p>
+<p>- Correction d'un problème de collision avec un pilier au point de départ T qui permettait potentiellement de lancer la bombe dans un endroit inaccessible.</p>
+
+<p><strong>Nuke</strong></p>
+<p>- Ajustement des collisions autour de l'entrée du conduit d'aération pour empêcher les pieds des personnages de passer à travers les textures.</p>
+<p>- Amélioration des collisions de la porte coulissante près de la rampe du site de bombe B.</p>
+
+<p><strong>Anubis</strong></p>
+<p>- Il n'est plus possible de sauter en dehors des limites de la carte près de la zone de réapparition T.</p>
+<p>- Correction de quelques endroits où la bombe pouvait être lâchée en dehors de la carte.</p>
+
+<p><strong>Overpass</strong></p>
+<p>- Amélioration des collisions.</p>
+<p>- Correction de maillage qui avait disparu.</p>
+
+<br><br>
+
+<hr width="100%">
+
+<br><br>
+
+<div class="comments">
+    <h3>Commentaires</h3>
+    <div class="comment">
+        <div class="comment-author">TocsiH</div>
+        <div class="comment-date">8 Février 2024, à 11h23</div>
+        <div class="comment-content">
+            Bon patch, à quand le bob, le viewmodel_recoil et l'arme à gauche ?
+        </div>
+    </div>
+</div>
+
+<div class="comment-form">
+    <h3>Commenter</h3>
+    <form action="#" method="post">
+        <textarea name="comment" id="comment" rows="4"></textarea>
+        <input type="submit" value="Poster">
+    </form>
+</div>
+
+<div class="footer">
+    <p>Texte de footer</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
