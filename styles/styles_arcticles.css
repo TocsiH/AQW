@@ -1,0 +1,87 @@
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+    padding-top: 100px; /* Pour laisser de la place pour le header */
+    padding-bottom: 60px; /* Pour laisser de la place pour le footer */
+    margin: 0;
+}
+.header {
+    background-color: #000000;
+    padding: 15px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+}
+
+.header h1 {
+    margin: 0;
+    flex-grow: 1;
+    color: white;
+    text-align: center;
+}
+.header .login-link {
+    color: white;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px;
+    text-align: left;
+    color: #fff;
+}
+.white {
+    color: #fff;
+}
+.comment {
+    margin-bottom: 10px;
+}
+.comment-author {
+    font-weight: bold;
+    color: orangered;
+}
+.comment-content {
+    margin-left: 20px;
+}
+.comment-date {
+    color: #999;
+    font-size: 0.8em;
+}
+.comment-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+.comment-form input[type="submit"] {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.th, .td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.th {
+    background-color: #f2f2f2;
+}
+.tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

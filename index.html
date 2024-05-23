@@ -4,133 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Actualités CS2</title>
-    <style>
-        body {
-            background-color: #f8f9fa;
-            padding: 20px;
-            margin-bottom: 60px;
-        }
-        .header {
-            background-color: #000000;
-            padding: 15px;
-            margin: 0;
-            width: 100%;
-            top: 0;
-            left: 0;
-            position: fixed;
-        }
-        .header img {
-            width: 10%;
-            height: 10%;
-        }
-        .footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #000000;
-            padding: 10px;
-            text-align: left;
-            color: #fff;
-        }
-        .white {
-            color: #fff;
-        }    
-        .article {
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .article img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-        .article-link {
-            text-decoration: none;
-            color: inherit;
-        }
-        .article-link:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 
 <body>
+    <header class="header">
+        <a href="index.html" class="article-link">
+            <img src="images/logo-handicap.jpg" alt="Logo de l'entreprise">
+        </a>  
+        <h1>Actualités CS2</h1>
+        <a href="login.html" class="login-link">Se connecter</a>
+    </header>
 
-<div class="container-fluid">
-    <div class="row header align-items-center">
-        <div class="col">
-            <a href="index.html" class="article-link">
-                <img src="logo-handicap.jpg" alt="Logo">
-            </a>  
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="carriere_s1mple.html" class="article-link">
+                    <article class="article">
+                        <img src="images/s1mple.png" alt="Image de S1mple">
+                        <h2>S1mple déteste CS2</h2>
+                        <p>23/05/2024 - 10:26</p> 
+                    </article>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="patch5.html" class="article-link">
+                    <article class="article">
+                        <img src="images/cs2.png" alt="Image du patch 14.5">
+                        <h2>Patch 14.5</h2>
+                        <p>16/02/2024 - 16:14</p> 
+                    </article>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="patch4.html" class="article-link">
+                    <article class="article">
+                        <img src="images/cs2.png" alt="Image du patch 14.4">
+                        <h2>Patch 14.4</h2>
+                        <p>15/02/2024 - 17:22</p>
+                    </article>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="patch3.html" class="article-link">
+                    <article class="article">
+                        <img src="images/cs2.png" alt="Image du patch 14.3">
+                        <h2>Patch 14.3</h2>
+                        <p>12/02/2024 - 18:19</p>
+                    </article>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="patch2.html" class="article-link">
+                    <article class="article">
+                        <img src="images/cs2.png" alt="Image du patch 14.2">
+                        <h2>Patch 14.2</h2>
+                        <p>09/02/2024 - 18:24</p>
+                    </article>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="patch1.html" class="article-link">
+                    <article class="article">
+                        <img src="images/cs2.png" alt="Image du patch 14.1">
+                        <h2>Patch 14.1</h2>
+                        <p>08/02/2024 - 23:58</p>
+                    </article>
+                </a>
+            </div>
         </div>
-        <div class="col-auto">
-            <h1 class="white">Actualités CS2</h1> 
-        </div>
-        <div class="col text-end">
-            <a href="login.html" style="color: white">Se connecter</a>
-        </div>
-    </div>
-</div>
+    </main>
 
-<br><br><br><br><br>
+    <footer class="footer">
+        <p>Texte de footer</p>
+    </footer>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <a href="patch5.html" class="article-link">
-                <div class="article" >
-                    <img src="cs2.png" alt="img">
-                    <h2>Patch 14.5</h2>
-                    <p>16/02/2024 - 16:14</p> 
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="patch4.html" class="article-link">
-                <div class="article">
-                    <img src="cs2.png" alt="img">
-                    <h2>Patch 14.4</h2>
-                    <p>15/02/2024 - 17:22</p>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="patch3.html" class="article-link">
-                <div class="article">
-                    <img src="cs2.png" alt="img">
-                    <h2>Patch 14.3</h2>
-                    <p>12/02/2024 - 18:19</p>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="patch2.html" class="article-link">
-                <div class="article">
-                    <img src="cs2.png" alt="img">
-                    <h2>Patch 14.2</h2>
-                    <p>09/02/2024 - 18:24</p>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="patch1.html" class="article-link">
-                <div class="article">
-                    <img src="cs2.png" alt="img">
-                    <h2>Patch 14.1</h2>
-                    <p>08/02/2024 - 23:58</p>
-                </div>  
-            </a>
-        </div>
-    </div>
-</div>
 
-<div class="footer">
-    <p>Texte de footer</p>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

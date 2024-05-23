@@ -4,127 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles_arcticles.css">
     <title>Patch 14.5</title>
-    <style>
-        body {
-            background-color: #f8f9fa;
-            padding: 20px;
-            margin-bottom: 60px;
-        }
-        .header {
-            background-color: #000000;
-            padding: 15px;
-            margin: 0;
-            width: 100%;
-            top: 0;
-            left: 0;
-            position: fixed;
-        }
-        .header img {
-            width: 10%;
-            height: 10%;
-        }
-        .footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #000000;
-            padding: 10px;
-            text-align: left;
-            color: #fff;
-        }
-        .white {
-            color: #fff;
-        }
-        .comment {
-            margin-bottom: 10px;
-        }
-        .comment-author {
-            font-weight: bold;
-            color: orangered;
-        }
-        .comment-content {
-            margin-left: 20px;
-        }
-        .comment-date {
-            color: #999;
-            font-size: 0.8em;
-        }
-        .comment-form textarea {
-            width: 100%;
-            padding: 5px;
-            margin-top: 5px;
-        }
-        .comment-form input[type="submit"] {
-            background-color: orangered;
-            color: #fff;
-            border: none;
-            padding: 5px 5px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body>
+    <header class="header">
+        <a href="index.html" class="article-link">
+            <img src="images/logo-handicap.jpg" alt="Logo de l'entreprise">
+        </a>  
+        <h1>Actualités CS2</h1>
+        <a href="login.html" class="login-link">Se connecter</a>
+    </header>
 
-<div class="container-fluid">
-    <div class="row header align-items-center">
-        <div class="col-auto">
-            <a href="index.html" class="article-link">
-                <img src="logo-handicap.jpg" alt="Logo">
-            </a>  
+    <main class="container">
+        <h2 style="text-align: center;">Mise à jour du 16/02/2024</h2>
+
+        <br>
+
+        <h3>DIVERS</h3>
+        <p>- Une force de lancement de 50 % des grenades est désormais garantie si les deux boutons d'attaque sont maintenus enfoncés assez longtemps puis relâchés presque en même temps.</p>
+        <p>- Correction du problème suivant : les avatars des bots ne s'affichaient plus correctement une fois le menu pause ouvert.</p>
+        <p>- Correction d'un problème avec le fonctionnement du bouton pour passer à la manche précédente lors d'une diffusion.</p>
+        <p>- Correction du problème suivant : il n'était pas possible de supprimer une association de touches dans les paramètres.</p>
+        <p>- Amélioration des performances des indicateurs d'affichage de télémétrie sur le HUD.</p>
+        <p>- Le volume des kits de musiques NIGHTMODE a été ajusté.</p>
+        <p>- Diverses améliorations au niveau de la stabilité.</p>
+
+        <br><br>
+
+        <hr width="100%">
+
+        <br><br>
+
+        <div class="comments">
+            <h3>Commentaires</h3>
+            <div class="comment">
+                <div class="comment-author">TocsiH</div>
+                <div class="comment-date">8 Février 2024, à 11h23</div>
+                <div class="comment-content">
+                    Bon patch, à quand le bob, le viewmodel_recoil et l'arme à gauche ?
+                </div>
+            </div>
         </div>
-        <div class="col text-end">
-            <a href="login.html" style="color: white">Se connecter</a>
+
+        <div class="comment-form">
+            <h3>Commenter</h3>
+            <form action="#" method="post">
+                <textarea name="comment" id="comment" rows="4"></textarea>
+                <input type="submit" value="Poster">
+            </form>
         </div>
-    </div>
-</div>
+    </main>
 
-<br>
+    <footer class="footer">
+        <p>Texte de footer</p>
+    </footer>
 
-<h2 style="text-align: center;">Mise à jour du 16/02/2024</h2>
-
-<br>
-
-<h3>DIVERS</h3>
-<p>- Une force de lancement de 50 % des grenades est désormais garantie si les deux boutons d'attaque sont maintenus enfoncés assez longtemps puis relâchés presque en même temps.</p>
-<p>- Correction du problème suivant : les avatars des bots ne s'affichaient plus correctement une fois le menu pause ouvert.</p>
-<p>- Correction d'un problème avec le fonctionnement du bouton pour passer à la manche précédente lors d'une diffusion.</p>
-<p>- Correction du problème suivant : il n'était pas possible de supprimer une association de touches dans les paramètres.</p>
-<p>- Amélioration des performances des indicateurs d'affichage de télémétrie sur le HUD.</p>
-<p>- Le volume des kits de musiques NIGHTMODE a été ajusté.</p>
-<p>- Diverses améliorations au niveau de la stabilité.</p>
-
-<br><br>
-
-<hr width="100%">
-
-<br><br>
-
-<div class="comments">
-    <h3>Commentaires</h3>
-    <div class="comment">
-        <div class="comment-author">TocsiH</div>
-        <div class="comment-date">8 Février 2024, à 11h23</div>
-        <div class="comment-content">
-            Bon patch, à quand le bob, le viewmodel_recoil et l'arme à gauche ?
-        </div>
-    </div>
-</div>
-
-<div class="comment-form">
-    <h3>Commenter</h3>
-    <form action="#" method="post">
-        <textarea name="comment" id="comment" rows="4"></textarea>
-        <input type="submit" value="Poster">
-    </form>
-</div>
-
-<div class="footer">
-    <p>Texte de footer</p>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
