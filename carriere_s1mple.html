@@ -14,7 +14,7 @@
         <a href="index.html" class="article-link">
             <img src="images/logo-handicap.jpg" alt="Logo de l'entreprise">
         </a>  
-        <h1 style="margin-left: 5%;">Actualités CS2</h1>
+        <p class="h1" style="margin-left: 5%;">Actualités CS2</p>
         <a href="login.html" class="login-link">Se connecter</a>
     </header>
     
@@ -42,7 +42,7 @@
         <h2>Rappelons le palmarès de sa carrière sur CSGO pour appuyer ses propos </h2>
 
         <div class="container">
-            <h1 class="mt-5 mb-4">Palmarès de S1mple</h1>
+            <h2 class="mt-5 mb-4">Palmarès de S1mple</h2>
             <table class="table table-bordered">
                 <thead class="table-light">
                     <tr>
@@ -175,8 +175,8 @@
 
         <br><br>
 
-        <div class="comments">
-            <h3>Commentaires</h3>
+        <section id="commentaires" class="comments">
+            <h2>Commentaires</h2>
             <div class="comment">
                 <div class="comment-author">mecmalin77</div>
                 <div class="comment-date">8 Février 2024, à 11h23</div>
@@ -198,10 +198,10 @@
                     Tro bien se jeu
                 </div>
             </div>
-        </div>
+        </section>
 
         <section class="comment-form">
-            <h2>Commenter</h2>
+            <h3>Commenter</h3>
             <form action="/" method="get">
                 <textarea name="comment" aria-label="ZoneDeTexte" id="comment" rows="2"></textarea>
                 <input type="submit" aria-label="Poster" value="Poster">
@@ -210,9 +210,15 @@
     </main>
 
     <footer class="footer">
-        <a class="white" href="/">Accueil</a> <span aria-hidden="true">|</span>
-        <a class="white" href="/infos.html">À propos</a> <span aria-hidden="true">|</span>
-        <a class="white" href="/contact.html">Contact</a>
+        <nav class="nav">
+            <ul>
+                <li><a class="white" href="index.html">Accueil</a></li>
+                <li aria-hidden="true">|</li>
+                <li><a class="white" href="infos.html">Mentions légales</a></li>
+                <li aria-hidden="true">|</li>
+                <li><a class="white" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </footer>
     
 

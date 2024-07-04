@@ -13,35 +13,35 @@
         <a href="index.html" class="article-link">
             <img src="images/logo-handicap.jpg" alt="Logo de l'entreprise">
         </a>  
-        <h1 style="margin-left: 5%;">Actualités CS2</h1>
+        <p class="h1" style="margin-left: 5%;">Actualités CS2</p>
         <a href="login.html" class="login-link">Se connecter</a>
     </header>
 
     <main class="container">
-        <h2 style="text-align: center;">Mise à jour du 15/02/2024</h2>
+        <h1 style="text-align: center;">Mise à jour du 15/02/2024</h1>
 
         <br>
 
-        <h3>ANIMATIONS</h3>
+        <p class="sous-section">ANIMATIONS</p>
         <p>- Correction d'un problème avec l'animation de montée d'échelle.</p>
         <p>- Correction d'un problème lorsque le Zeus était équipé dans le menu principal.</p>
         <p>- Correction d'un problème avec l'animation de prise en main du couteau Kukri pendant la séquence d'introduction de l'équipe.</p>
 
-        <h3>MODE SPECTATEUR</h3>
+        <p class="sous-section">MODE SPECTATEUR</p>
         <p>- Les personnes qui commentent ou observent peuvent désormais utiliser les commandes « spec_lock_to_accountid » et « spec_lock_to_current_player ».</p>
         <p>- Les commandes « spec_player » et « spec_goto » sont maintenant prises en charge par CSTV et les rediffusions.</p>
         <p>- Le paramètre du serveur « tv_secure_bypass » autorise désormais les connexions via HLAE à des serveurs CSTV sécurisés par VAC.</p>
 
-        <h3>GAMEPLAY</h3>
+        <p class="sous-section">GAMEPLAY</p>
         <p>- En mode match à mort, le Zeus peut désormais être acheté au début de chaque manche. Il sera racheté automatiquement à moins que le mode « Armes aléatoires » ne soit activé.</p>
         <p>- En mode match à mort, faire deux victimes au Zeus au cours d'une même vie rapporte maintenant le double de points.</p>
         <p>- Ajout de la commande côté serveur « mp_modify_timeouts » qui permet d'ajouter ou de soustraire une pause tactique à l'équipe AT/T si le fichier de sauvegarde est restauré ou si une équipe a pris par erreur une pause tactique au lieu d'un arrêt technique.</p>
 
-        <h3>JOURNALISATION</h3>
+        <p class="sous-section">JOURNALISATION</p>
         <p>- Le début et la fin de l'échauffement génèrent désormais un message de journal dans le fichier journal du serveur de jeu.</p>
         <p>- Correction du problème suivant : les valeurs des dégâts enregistrées dans le journal du serveur de jeu n'étaient pas arrondies correctement.</p>
 
-        <h3>DIVERS</h3>
+        <p class="sous-section">DIVERS</p>
         <p>- Amélioration de la fluidité des animations en vue subjective lorsque les fréquences d'images du client sont faibles ou instables.</p>
         <p>- Correction de problèmes liés à certaines configurations de touches et à leur code de balayage. Les associations de touches ne dépendent plus de la langue d'entrée.</p>
         <p>- Ajout d'un élément de diagnostic des performances au HUD qui peut être configuré dans la section « Télémétrie » du menu des paramètres.</p>
@@ -51,20 +51,20 @@
         <p>- Correction d'un problème de performance de la lunette des fusils de précision et ajustement du traitement visuel.</p>
         <p>- Diverses améliorations des performances.</p>
 
-        <h3>CARTES</h3>
-        <p><strong>Vertigo</strong></p>
+        <p class="sous-section">CARTES</p>
+        <p><b>Vertigo</b></p>
         <p>- Correction d'un problème de collision avec les grenades autour du climatiseur du site de bombe B.</p>
         <p>- Correction d'un problème de collision avec un pilier au point de départ T qui permettait potentiellement de lancer la bombe dans un endroit inaccessible.</p>
 
-        <p><strong>Nuke</strong></p>
+        <p><b>Nuke</b></p>
         <p>- Ajustement des collisions autour de l'entrée du conduit d'aération pour empêcher les pieds des personnages de passer à travers les textures.</p>
         <p>- Amélioration des collisions de la porte coulissante près de la rampe du site de bombe B.</p>
 
-        <p><strong>Anubis</strong></p>
+        <p><b>Anubis</b></p>
         <p>- Il n'est plus possible de sauter en dehors des limites de la carte près de la zone de réapparition T.</p>
         <p>- Correction de quelques endroits où la bombe pouvait être lâchée en dehors de la carte.</p>
 
-        <p><strong>Overpass</strong></p>
+        <p><b>Overpass</b></p>
         <p>- Amélioration des collisions.</p>
         <p>- Correction de maillage qui avait disparu.</p>
 
@@ -74,8 +74,8 @@
 
         <br><br>
 
-        <div class="comments">
-            <h3>Commentaires</h3>
+        <section id="commentaires" class="comments">
+            <h2>Commentaires</h2>
             <div class="comment">
                 <div class="comment-author">TocsiH</div>
                 <div class="comment-date">8 Février 2024, à 11h23</div>
@@ -90,10 +90,10 @@
                     Tro bien se jeu
                 </div>
             </div>
-        </div>
+        </section>
 
         <section class="comment-form">
-            <h2>Commenter</h2>
+            <h3>Commenter</h3>
             <form action="/" method="get">
                 <textarea name="comment" aria-label="ZoneDeTexte" id="comment" rows="2"></textarea>
                 <input type="submit" aria-label="Poster" value="Poster">
@@ -102,9 +102,15 @@
     </main>
 
     <footer class="footer">
-        <a class="white" href="/">Accueil</a> <span aria-hidden="true">|</span>
-        <a class="white" href="/infos.html">À propos</a> <span aria-hidden="true">|</span>
-        <a class="white" href="/contact.html">Contact</a>
+        <nav class="nav">
+            <ul>
+                <li><a class="white" href="index.html">Accueil</a></li>
+                <li aria-hidden="true">|</li>
+                <li><a class="white" href="infos.html">Mentions légales</a></li>
+                <li aria-hidden="true">|</li>
+                <li><a class="white" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

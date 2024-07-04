@@ -14,26 +14,26 @@
         <a href="index.html" class="article-link">
             <img src="images/logo-handicap.jpg" alt="Logo de l'entreprise">
         </a>  
-        <a class="" style="margin-left: 5%;">Actualités CS2</h1>
+        <p class="h1" style="margin-left: 5%;">Actualités CS2</p>
         <a href="login.html" class="login-link">Se connecter</a>
     </header>
 
     <main class="container">
-        <h1 style="text-align: center;">Mise à jour du 08/02/2024</h2>
+        <h1 style="text-align: center;">Mise à jour du 08/02/2024</h1>
 
         <br>
 
-        <h3>COURSE À L'ARMEMENT</h3>
+        <p class="sous-section">COURSE À L'ARMEMENT</p>
         <p>- Correction du bug suivant : faire une victime supplémentaire au fusil à pompe avant la phase au couteau comptait comme la victime au couteau qui octroyait la victoire.</p>
 
-        <h3>FUMÉE</h3>
+        <p class="sous-section">FUMÉE</p>
         <p>- La visibilité des silhouettes dans la fumée a été ajustée.</p>
         <p>- Correction du bug suivant : les unités ennemies étaient visibles sur le radar même si elles étaient derrière un écran de fumée et une paroi transparente (par exemple, une fenêtre).</p>
 
-        <h3>ANIMATIONS</h3>
+        <p class="sous-section">ANIMATIONS</p>
         <p>- Corrections de bugs divers et améliorations apportées aux animations d'examen.</p>
 
-        <h3>CARTES</h3>
+        <p class="sous-section">CARTES</p>
         <p>- Correction du problème suivant : le battant des portes s'ouvrait du mauvais côté sur plusieurs cartes.</p>
         <ul>
             <li><u>Nuke:</u> Correction de régressions relatives à la visibilité.</li>
@@ -42,7 +42,7 @@
             <li><u>Mirage:</u> Correction d'une collision à l'intérieur du palais où la bombe pouvait être lancée dans une zone inatteignable.</li>
         </ul>
 
-        <h3>DIVERS</h3>
+        <p class="sous-section">DIVERS</p>
         <p>- Correction du bug suivant : certaines touches qui ne se trouvent pas sur les claviers américains (par exemple, la touche de barre oblique inversée) ne pouvaient pas être associées.</p>
         <p>- Correction d'un problème qui empêchait la lecture de certaines vieilles diffusions.</p>
         <p>- Correction de divers plantages.</p>
@@ -53,8 +53,8 @@
 
         <br><br>
 
-        <div class="comments">
-            <h3>Commentaires</h3>
+        <section id="commentaires" class="comments">
+            <h2>Commentaires</h2>
             <div class="comment">
                 <div class="comment-author">TocsiH</div>
                 <div class="comment-date">8 Février 2024, à 11h23</div>
@@ -69,10 +69,10 @@
                     Tro bien se jeu
                 </div>
             </div>
-        </div>
+        </section>
 
         <section class="comment-form">
-            <h2>Commenter</h2>
+            <h3>Commenter</h3>
             <form action="/" method="get">
                 <textarea name="comment" aria-label="ZoneDeTexte" id="comment" rows="2"></textarea>
                 <input type="submit" aria-label="Poster" value="Poster">
@@ -81,9 +81,15 @@
     </main>
 
     <footer class="footer">
-        <a class="white" href="/">Accueil</a> <span aria-hidden="true">|</span>
-        <a class="white" href="/infos.html">À propos</a> <span aria-hidden="true">|</span>
-        <a class="white" href="/contact.html">Contact</a>
+        <nav class="nav">
+            <ul>
+                <li><a class="white" href="index.html">Accueil</a></li>
+                <li aria-hidden="true">|</li>
+                <li><a class="white" href="infos.html">Mentions légales</a></li>
+                <li aria-hidden="true">|</li>
+                <li><a class="white" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
