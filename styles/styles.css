@@ -93,7 +93,7 @@ input[type="password"] {
     border-radius: 3px;
 }
 input[type="submit"] {
-    background-color: orangered;
+    background-color: #9E2A00;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -101,5 +101,5 @@ input[type="submit"] {
     cursor: pointer;
 }
 input[type="submit"]:hover {
-    background-color: orangered
+    background-color: #9E2A00
 }

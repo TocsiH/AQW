@@ -49,7 +49,7 @@ body {
 }
 .comment-author {
     font-weight: bold;
-    color: orangered;
+    color: #9E2A00;
 }
 .comment-content {
     margin-left: 20px;
@@ -64,7 +64,7 @@ body {
     margin-top: 5px;
 }
 .comment-form input[type="submit"] {
-    background-color: orangered;
+    background-color: #9E2A00;
     color: #fff;
     border: none;
     padding: 5px 5px;
